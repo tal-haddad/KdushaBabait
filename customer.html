@@ -55,19 +55,32 @@ content="width=device-width, initial-scale=1.0">
 </div>
 
 
-<button class="btn" onclick="openModal()">
+<button class="btn" onclick="openImages()">
 צפייה בסריקות המזוזה
 </button>
 
-
-<button class="btn">
+<button class="btn" onclick="openTakanon()">
 תקנון האחריות
 </button>
 
-
-<button class="btn">
+<button class="btn" onclick="openTeuda()">
 תעודת הסופר
 </button>
+
+
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">×</span>
+
+        <h2>סריקות המזוזה</h2>
+
+        <div id="images"></div>
+
+    </div>
+
+</div>
 
 
 </div>
