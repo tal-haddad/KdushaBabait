@@ -5,13 +5,15 @@ const params = new URLSearchParams(window.location.search);
 
 const id = params.get("id");
 
+let currentClient = null;
 
 fetch(API_URL + "?id=" + id)
 
 .then(response => response.json())
 
 .then(client => {
-
+    
+    currentClient = client;
 
     document.getElementById("name").textContent = client.name || "";
 
