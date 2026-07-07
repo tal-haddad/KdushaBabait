@@ -78,3 +78,44 @@ function closeModal(){
     document.getElementById("modal").style.display = "none";
 
 }
+
+function openTakanon(){
+
+    const url =
+    "https://drive.google.com/file/d/1JwUsBVEDYzTM0QEj1Jzf-vvcWYabVsGK/preview";
+
+
+    document.getElementById("takanon").innerHTML =
+    `
+    <iframe 
+    src="${url}"
+    style="width:100%;height:80vh;border:none;">
+    </iframe>
+    `;
+
+
+    document.getElementById("takanonModal").style.display="block";
+
+}
+
+
+
+function openTeuda(){
+
+    const url =
+    "https://drive.google.com/thumbnail?id=1is7Zjm9T8sspWdwxwi_DousuKnTvvYVS&sz=w1200";
+
+
+    document.getElementById("teuda").innerHTML =
+    `
+    <img 
+    src="${url}" 
+    loading="lazy"
+    style="width:100%;border-radius:10px;">
+    `;
+
+
+    document.getElementById("teudaModal").style.display="block";
+
+}
+
