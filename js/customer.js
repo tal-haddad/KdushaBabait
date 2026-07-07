@@ -75,7 +75,11 @@ function openImages(){
 
 function closeModal(){
 
-    document.getElementById("modal").style.display = "none";
+    document.querySelectorAll(".modal").forEach(element => {
+
+        element.style.display = "none";
+
+    });
 
 }
 
