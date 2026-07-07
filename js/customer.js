@@ -35,3 +35,46 @@ fetch(API_URL + "?id=" + id)
     console.error("שגיאה בטעינת לקוח:", error);
 
 });
+
+function openImages(){
+
+    let html = "";
+
+    if (!currentClient || !currentClient.images) {
+        html = "אין סריקות להצגה";
+    }
+    else {
+
+        currentClient.images.forEach(image => {
+
+            const url =
+            "https://drive.google.com/thumbnail?id="
+            + image.id
+            + "&sz=w1200";
+
+
+            html += `
+                <div style="margin-bottom:20px;">
+                    <img src="${url}" loading="lazy">
+                    <div>${image.name}</div>
+                </div>
+            `;
+
+        });
+
+    }
+
+
+    document.getElementById("images").innerHTML = html;
+
+    document.getElementById("modal").style.display = "block";
+
+}
+
+
+
+function closeModal(){
+
+    document.getElementById("modal").style.display = "none";
+
+}
