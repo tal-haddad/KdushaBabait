@@ -1,5 +1,4 @@
 const API_URL = "https://script.google.com/macros/s/AKfycbxOpbr75YkUvq47L2GFLbKFMocpe1bE2hQ5iWn_xMy4XcslhWlbQhMYctWpCQXsoJbs/exec";
-const API_URL = "https://script.google.com/macros/s/AKfycbxOpbr75YkUvq47L2GFLbKFMocpe1bE2hQ5iWn_xMy4XcslhWlbQhMYctWpCQXsoJbs/exec";
 
 
 const params = new URLSearchParams(window.location.search);
