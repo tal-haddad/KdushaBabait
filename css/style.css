@@ -3,7 +3,7 @@ body {
     background:
         linear-gradient(rgba(248,241,223,0.95),
         rgba(248,241,223,0.95)),
-        url("https://tal-haddad.github.io/KdushaBabait/images/bg.webp") center/cover fixed;
+        url("https://tal-haddad.github.io/KdushaBabait/images/bg.webp?v=2"") center/cover fixed;
 
     padding: 30px;
     color: #3d2a12;
