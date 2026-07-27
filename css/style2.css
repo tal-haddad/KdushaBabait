@@ -14,7 +14,7 @@ body {
             rgba(250,246,235,0.94),
             rgba(250,246,235,0.94)
         ),
-        url("images/bg.jpg") center/cover fixed;
+        url("images/bg.webp") center/cover fixed;
 
     color: #4b3218;
 }
