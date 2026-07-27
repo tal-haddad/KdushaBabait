@@ -53,10 +53,6 @@ function openImages(){
             + "&sz=w1200";
 
             const url2 =
-            "https://drive.google.com/uc?export=view&id=" +
-            image.id;
-
-            const url3 =
             "https://lh3.googleusercontent.com/d/" +
             image.id;
 
@@ -70,7 +66,7 @@ html += `
     <div>${image.name} - url</div>
 </div>
 `;
-             html += `
+            html += `
 <div style="margin-bottom:20px;">
     <img
         src="${url2}"
@@ -78,16 +74,6 @@ html += `
         alt="url2"
         onerror="this.style.border='3px solid red'; console.log('url2 נכשל')">
     <div>${image.name} - url2</div>
-</div>
-`;
-            html += `
-<div style="margin-bottom:20px;">
-    <img
-        src="${url3}"
-        loading="lazy"
-        alt="url3"
-        onerror="this.style.border='3px solid red'; console.log('url3 נכשל')">
-    <div>${image.name} - url3</div>
 </div>
 `;
 
